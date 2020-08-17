@@ -24,10 +24,10 @@
   <title>
        
        
-           Migrate to Hugo from Jekyll | Zhou Fang
+           Migrate to Hugo from Jekyll | Zhou Fang 方舟
        
   </title>
-  <meta name="title" content="Migrate to Hugo from Jekyll | Zhou Fang">
+  <meta name="title" content="Migrate to Hugo from Jekyll | Zhou Fang 方舟">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -90,12 +90,12 @@
         <nav class="navbar">
     <div class="container">
         <div class="navbar-header header-logo">
-        	<a href="/">Zhou Fang</a>
+        	<a href="/">Zhou Fang 方舟</a>
         </div>
         <div class="menu navbar-right">
                 
                 
-                <a class="menu-item" href="/posts/" title="">Blog</a>
+                <a class="menu-item" href="/blog/" title="">Blog</a>
                 
                 <a class="menu-item" href="/resume/" title="">Resume</a>
                 
@@ -108,7 +108,7 @@
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="/">Zhou Fang</a></div>
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="/">Zhou Fang 方舟</a></div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>
@@ -117,7 +117,7 @@
           <div class="menu" id="mobile-menu">
                 
                 
-                <a class="menu-item" href="/posts/" title="">Blog</a>
+                <a class="menu-item" href="/blog/" title="">Blog</a>
                 
                 <a class="menu-item" href="/resume/" title="">Resume</a>
                 
@@ -392,7 +392,23 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a><div id="gitalk-container"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+          var gitalk = new Gitalk({
+              id: '2014-03-10 00:00:00 \u002b0000 UTC',
+              title: 'Migrate to Hugo from Jekyll',
+              clientID: '',
+              clientSecret: '',
+              repo: 'hugo_blog',
+              owner: 'fjoe88',
+              admin: ['fjoe88'],
+              body: decodeURI(location.href)
+          });
+          gitalk.render('gitalk-container');
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
  
 
@@ -405,7 +421,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="copyright">
         &copy;
         
-        <span itemprop="copyrightYear">2012 - 2020</span>
+        <span itemprop="copyrightYear">2020 - 2020</span>
         
          
             <span class="author" itemprop="copyrightHolder"><a href="/">Zhou Fang</a> | </span>

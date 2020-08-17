@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zhou Fang on Zhou Fang</title>
+    <title>Zhou Fang 方舟 on Zhou Fang 方舟</title>
     <link>/</link>
-    <description>Recent content in Zhou Fang on Zhou Fang</description>
+    <description>Recent content in Zhou Fang 方舟 on Zhou Fang 方舟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -14,38 +14,20 @@
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. My first name 舟 is pronounced exactly the same as Joe hence I go by it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries. I love sports, primarily soccer, and have supported Chelsea FC since when I was 10 (London is Blue!). I studied Automotive Engineering in Turin (Italy) I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I live in Lehi, UT, with my wife, and my golden retriever - Ollie.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If my blog has helped you, you can buy me a coffee on Ko-fi!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/./about_files/cover.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;my-name-is-zhou-fang-方舟-and-i-am-a-data-analysis-engineer-at-micron-where-i-work-on-improving-our-semiconductor-wafer-yield-and-fabrication-efficiency-through-extracting-insights-from-data-my-first-name-舟-is-pronounced-exactly-the-same-as-joe-hence-i-go-by-it-as-well&#34;&gt;My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. My first name 舟 is pronounced exactly the same as Joe hence I go by it as well.&lt;/h4&gt;
+&lt;h4 id=&#34;i-love-using-the-r-language-enjoyed-its-many-statistical-and-data-munging-packages-and-the-vibrant-r-community-i-dab-with-python-too-and-mostly-for-its-machine-learning-libraries-i-love-sports-primarily-soccer-and-have-supported-chelsea-fc-since-when-i-was-10-london-is-blue-i-studied-automotive-engineering-in-turin-italy-i-moved-to-the-united-states-in-2011-and-finished-my-ms-in-mechanical-engineering-at-columbia-university-in-the-city-of-new-york&#34;&gt;I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries. I love sports, primarily soccer, and have supported Chelsea FC since when I was 10 (London is Blue!). I studied Automotive Engineering in Turin (Italy) I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York.&lt;/h4&gt;
+&lt;h4 id=&#34;i-live-in-lehi-ut-with-my-wife-and-my-golden-retriever---ollie&#34;&gt;I live in Lehi, UT, with my wife, and my golden retriever - Ollie.&lt;/h4&gt;
+&lt;h4 id=&#34;if-my-blog-has-helped-you-you-can-buy-me-a-coffee-on-ko-fi&#34;&gt;If my blog has helped you, you can buy me a coffee on Ko-fi!&lt;/h4&gt;
 </description>
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>/post/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>/posts/</link>
+      <title>Blogs</title>
+      <link>/blog/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/</guid>
+      <guid>/blog/</guid>
       <description></description>
     </item>
     

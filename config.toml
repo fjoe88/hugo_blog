@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 languageCode = "en"
 defaultContentLanguage = "en"
-title = "Zhou Fang"
+title = "Zhou Fang 方舟"
 theme = "KeepIt"
 
 paginate = 12
@@ -26,7 +26,7 @@ disqusShortname = "yourdiscussshortname"
 [menu]
   [[menu.main]]
     name = "Blog"
-    url = "/posts/"
+    url = "/blog/"
     weight = 1
 
 
@@ -42,7 +42,7 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
 
 [params]
-    since = 2012
+    since = 2020
     author = "Zhou Fang"               # Author's name
     subtitle = "方舟"       # Subtitle
     cdn_url = ""           # Base CDN URL
@@ -163,8 +163,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     height = 600
 
 [params.gitalk]
-owner = ""       # Your GitHub ID
-repo = ""        # The repo to store comments
+owner = "fjoe88"       # Your GitHub ID
+repo = "hugo_blog"        # The repo to store comments
 clientId = ""    # Your client ID
 clientSecret = "" # Your client secret
 
