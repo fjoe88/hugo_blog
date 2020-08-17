@@ -44,7 +44,7 @@ disqusShortname = "yourdiscussshortname"
 [params]
     since = 2020
     author = "Zhou Fang"               # Author's name
-    subtitle = "方舟"       # Subtitle
+    subtitle = "方 舟"       # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
 
