@@ -8,7 +8,7 @@ author:
 date: "2020-08-17"
 title: About
 ---
-![](/./about_files/cover.png)
+![](/./about_files/cover.jpg)
 
 #### My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. My first name 舟 is pronounced exactly the same as Joe hence I go by it as well.   
 
