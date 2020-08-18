@@ -19,4 +19,4 @@ I love using the R language, enjoyed its many statistical and data munging packa
 I live in Lehi, UT, with my wife, and my golden retriever - Ollie.
 
 
-If my blog has helped you, you can buy me a coffee on Ko-fi!  
+If my blog has helped you, you can buy me a coffee on [Ko-fi](https://ko-fi.com/fjoe88)!  

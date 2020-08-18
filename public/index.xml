@@ -18,7 +18,128 @@
 &lt;p&gt;My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. My first name 舟 is pronounced exactly the same as Joe hence I go by it as well.&lt;/p&gt;
 &lt;p&gt;I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries. I love sports, primarily soccer, and have supported Chelsea FC since when I was 10 (London is Blue!). I studied Automotive Engineering in Turin (Italy) I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York.&lt;/p&gt;
 &lt;p&gt;I live in Lehi, UT, with my wife, and my golden retriever - Ollie.&lt;/p&gt;
-&lt;p&gt;If my blog has helped you, you can buy me a coffee on Ko-fi!&lt;/p&gt;
+&lt;p&gt;If my blog has helped you, you can buy me a coffee on &lt;a href=&#34;https://ko-fi.com/fjoe88&#34;&gt;Ko-fi&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zhou Fang</title>
+      <link>/resume/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;style&gt;
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  &lt;/style&gt;
+&lt;div id=&#34;aside&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Aside&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;zhoufang.jpg&#34; style=&#34;width:100.0%&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;logo&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;View this CV online with links at &lt;em&gt;guangchuangyu.github.io/cv&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;contact&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:fjoe88@gmail.com&#34; class=&#34;email&#34;&gt;fjoe88@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fa fa-twitter&#34;&gt;&lt;/i&gt; fjoe88&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt; github.com/fjoe88&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt; fjoe88.netlify.app&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fa fa-phone&#34;&gt;&lt;/i&gt; +1 (917) 355-6785&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;skills&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R packages&lt;/h2&gt;
+&lt;p&gt;data analysis helper packages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;d8ahelper&lt;/li&gt;
+&lt;li&gt;copier&lt;/li&gt;
+&lt;li&gt;rtrend&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;disclaimer&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;made w/ pagedown&lt;/p&gt;
+&lt;p&gt;Last updated on 2020-08-17.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;main&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Main&lt;/h1&gt;
+&lt;div id=&#34;title&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Zhou Fang&lt;/h2&gt;
+&lt;p&gt;Data Analysis Engineer at Micron Technology&lt;sup&gt;1&lt;/sup&gt;. I have developed more than 20 R packages, including d8ahelper&lt;sup&gt;2&lt;/sup&gt;, copier&lt;sup&gt;3&lt;/sup&gt;, rtrend&lt;sup&gt;4&lt;/sup&gt;, to help biologists to explore and understand their data.&lt;/p&gt;
+&lt;p&gt;I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;professional-experience&#34; class=&#34;section level2&#34; data-icon=&#34;suitcase&#34;&gt;
+&lt;h2&gt;Professional Experience&lt;/h2&gt;
+&lt;div id=&#34;data-analysis-engineer&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Data Analysis Engineer&lt;/h3&gt;
+&lt;p&gt;Micron Technology Fab 2&lt;/p&gt;
+&lt;p&gt;Lehi, UT&lt;/p&gt;
+&lt;p&gt;N/A - 2019&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be filled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sr.-process-integration-engineer&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Sr. Process Integration Engineer&lt;/h3&gt;
+&lt;p&gt;Globalfoundries&lt;/p&gt;
+&lt;p&gt;Malta, NY&lt;/p&gt;
+&lt;p&gt;2019 - 2013&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be filled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;education&#34; class=&#34;section level2&#34; data-icon=&#34;graduation-cap&#34; data-concise=&#34;true&#34;&gt;
+&lt;h2&gt;Education&lt;/h2&gt;
+&lt;div id=&#34;m.s.-mechanical-engineering&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;M.S., Mechanical Engineering&lt;/h3&gt;
+&lt;p&gt;Columbia University&lt;/p&gt;
+&lt;p&gt;New York, USA&lt;/p&gt;
+&lt;p&gt;2013 - 2011&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be filled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;b.s.-mechanical-engineering&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;B.S., Mechanical Engineering&lt;/h3&gt;
+&lt;p&gt;Polytechnic University of Turin&lt;/p&gt;
+&lt;p&gt;Turin, Italy&lt;/p&gt;
+&lt;p&gt;2010 - 2007&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be filled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Certificate {data-icon=book} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;!-- Teaching Experience {data-icon=chalkboard-teacher} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;!-- Grants  {data-icon=chart-line} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;!-- Books {data-icon=book} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;!-- Publications {data-icon=book} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;!-- Conference proceedings {data-icon=group} --&gt;
+&lt;!-- -------------------------------------------------------------------------------- --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;links&#34; class=&#34;section level2&#34; data-icon=&#34;link&#34;&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.micron.com&#34; class=&#34;uri&#34;&gt;http://www.micron.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fjoe88/d8ahelper&#34; class=&#34;uri&#34;&gt;https://github.com/fjoe88/d8ahelper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fjoe88/copier&#34; class=&#34;uri&#34;&gt;https://github.com/fjoe88/copier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fjoe88/rtrend&#34; class=&#34;uri&#34;&gt;https://github.com/fjoe88/rtrend&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

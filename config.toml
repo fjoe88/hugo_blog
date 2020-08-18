@@ -38,7 +38,7 @@ disqusShortname = "yourdiscussshortname"
     
   [[menu.main]]
     name = "Resume"
-    url = "/resume/"
+    url = "/resume/index.html"
     weight = 3
 
 [params]
