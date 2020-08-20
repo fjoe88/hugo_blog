@@ -1,5 +1,6 @@
 loc,title,institution,start,end,description_1,description_2,description_3,section,order
-Micron Technology Fab 2,Data Analysis Engineer,"Lehi, UT",2019,,To be filled,NA,NA,work experience,1
-Globalfoundries,Sr. Process Integration Engineer,"Malta, NY",2013,2019,To be filled,NA,NA,work experience,2
-Columbia University,"M.S., Mechanical Engineering","New York, USA",2011,2013,To be filled,NA,NA,education,1
-Polytechnic University of Turin,"B.S., Mechanical Engineering","Turin, Italy",2007,2010,To be filled,NA,NA,education,2
+Micron Technology Fab 2,Data Analysis Engineer,"Lehi, UT",2019,-,"Use data analysis skills to extract answers from data, be it to source variation component to key inline metrics that drives yield improvements, or to determine root cause to yield deviation excursions.",,NA,work experience,1
+Globalfoundries,Sr. Process Integration Engineer,"Malta, NY",2013,2019,"7nm new product introduction (NPI) through planning, setup, and execution.","Drive module setup readiness and silicon movement to ensure on-time delivery.
+Interlocks with internal and external customer on program objectives and needs.",Developed tools for real-time lot status and inline SPC monitoring using Python/SQL.,work experience,2
+Columbia University,"M.S., Mechanical Engineering","New York, USA",2011,2013,To be filled,2x Intramural Soccer Champions,NA,education,1
+Polytechnic University of Turin,"B.S., Mechanical Engineering","Turin, Italy",2007,2010,To be filled,"INIA scholarship 2007, 2008, 2009",NA,education,2
