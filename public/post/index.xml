@@ -18,7 +18,7 @@
       
       <guid>/post/r-how-to-write-a-custom-lapply-function-that-remember-list-names-using-closures-and-function-factories/</guid>
       <description>One of my favorite as well as most used base function in R is lapply, where it allows one to apply a function over a List or a Vector, and return a list of the same length.
-An example would be:
+Here is an example:
 num &amp;lt;- list(0, 1, 2, 3)add_one &amp;lt;- function(x) x+1#returns a new list same length as num but with each number element increased by onenum_add_one &amp;lt;- lapply(num, add_one)Another variant of the apply family - sapply, works similarly to lapply except that the returned result will be simplified, using previous example</description>
     </item>
     

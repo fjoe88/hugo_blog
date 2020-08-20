@@ -15,7 +15,7 @@ featured_image: ~
 
 One of my favorite as well as most used base function in R is `lapply`, where it allows one to apply a function over a `List` or a `Vector`, and return a list of the same length.
 
-An example would be:
+Here is an example:
 
 ```{r}
 num <- list(0, 1, 2, 3)

@@ -37,7 +37,7 @@
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[R] How to write a custom lapply function that can access list names, using closures and function factories"/>
 <meta name="twitter:description" content="One of my favorite as well as most used base function in R is lapply, where it allows one to apply a function over a List or a Vector, and return a list of the same length.
-An example would be:
+Here is an example:
 num &lt;- list(0, 1, 2, 3)add_one &lt;- function(x) x&#43;1#returns a new list same length as num but with each number element increased by onenum_add_one &lt;- lapply(num, add_one)Another variant of the apply family - sapply, works similarly to lapply except that the returned result will be simplified, using previous example"/>
 
   <script type="application/ld+json">
@@ -169,7 +169,7 @@ num &lt;- list(0, 1, 2, 3)add_one &lt;- function(x) x&#43;1#returns a new list
 
 
 <p>One of my favorite as well as most used base function in R is <code>lapply</code>, where it allows one to apply a function over a <code>List</code> or a <code>Vector</code>, and return a list of the same length.</p>
-<p>An example would be:</p>
+<p>Here is an example:</p>
 <pre class="r"><code>num &lt;- list(0, 1, 2, 3)
 add_one &lt;- function(x) x+1
 
