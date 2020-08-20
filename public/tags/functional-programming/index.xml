@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>[R] How to write a custom lapply function that remember list names using closures and function factories</title>
+      <title>[R] How to write a custom lapply function that can access list names, using closures and function factories</title>
       <link>/post/r-how-to-write-a-custom-lapply-function-that-remember-list-names-using-closures-and-function-factories/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
