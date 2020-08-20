@@ -30,6 +30,20 @@
     </url>
   
     <url>
+      <loc>/post/r-how-to-write-a-r-how-to-write-a-custom-lapply-function-that-can-access-list-names-using-closures-and-function-factories/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>/post/r-how-to-write-a-custom-lapply-function-that-remember-list-names-using-closures-and-function-factories/</loc>
       
       <lastmod>2020-08-20T00:00:00+00:00</lastmod>
