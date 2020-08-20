@@ -9,6 +9,8 @@ enableEmoji = true
 enableRobotsTXT = true
 googleAnalytics = ""
 disqusShortname = "yourdiscussshortname"
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
 [sitemap]
   changefreq = "monthly"
