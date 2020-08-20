@@ -30,9 +30,121 @@
     </url>
   
     <url>
+      <loc>/post/r-how-to-write-a-custom-lapply-function-that-remember-list-names-using-closures-and-function-factories/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/categories/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/tags/functional-programming/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/post/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/tags/r/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/categories/r/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/tags/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>/resume/</loc>
       
-      <lastmod>2020-08-19T00:00:00+00:00</lastmod>
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>/</loc>
+      
+      <lastmod>2020-08-20T00:00:00+00:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -72,35 +184,7 @@
     </url>
   
     <url>
-      <loc>/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
       <loc>/blog/goisforlovers/</loc>
-      
-      <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>/categories/</loc>
       
       <lastmod>2014-04-02T00:00:00+00:00</lastmod>
       
@@ -227,20 +311,6 @@
   
     <url>
       <loc>/blog/introduction-aux-modeles-hugo/</loc>
-      
-      <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>/tags/</loc>
       
       <lastmod>2014-04-02T00:00:00+00:00</lastmod>
       

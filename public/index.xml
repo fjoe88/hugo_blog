@@ -5,13 +5,22 @@
     <description>Recent content in Zhou Fang 方舟 on Zhou Fang 方舟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Zhou Fang</title>
       <link>/resume/</link>
-      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/resume/</guid>
       <description>
@@ -52,7 +61,7 @@
 &lt;div id=&#34;disclaimer&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Disclaimer&lt;/h2&gt;
 &lt;p&gt;made w/ pagedown&lt;/p&gt;
-&lt;p&gt;Last updated on 2020-08-19.&lt;/p&gt;
+&lt;p&gt;Last updated on 2020-08-20.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;main&#34; class=&#34;section level1&#34;&gt;
@@ -68,11 +77,9 @@
 &lt;h3&gt;Data Analysis Engineer&lt;/h3&gt;
 &lt;p&gt;Micron Technology Fab 2&lt;/p&gt;
 &lt;p&gt;Lehi, UT&lt;/p&gt;
+&lt;p&gt;Current - 2019&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;2019&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;To be filled&lt;/li&gt;
+&lt;li&gt;Use data analysis skills to extract answers from data, be it to source variation component to key inline metrics that drives yield improvements, or to determine root cause to yield deviation excursions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;sr.-process-integration-engineer&#34; class=&#34;section level3&#34;&gt;
@@ -96,7 +103,7 @@ Interlocks with internal and external customer on program objectives and needs.&
 &lt;p&gt;New York, USA&lt;/p&gt;
 &lt;p&gt;2013 - 2011&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;To be filled&lt;/li&gt;
+&lt;li&gt;2x Intramural Soccer Champions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;b.s.-mechanical-engineering&#34; class=&#34;section level3&#34;&gt;
@@ -105,7 +112,7 @@ Interlocks with internal and external customer on program objectives and needs.&
 &lt;p&gt;Turin, Italy&lt;/p&gt;
 &lt;p&gt;2010 - 2007&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;To be filled&lt;/li&gt;
+&lt;li&gt;INIA scholarship 2007, 2008, 2009&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- Certificate {data-icon=book} --&gt;
 &lt;!-- -------------------------------------------------------------------------------- --&gt;
@@ -141,9 +148,10 @@ Interlocks with internal and external customer on program objectives and needs.&
       
       <guid>/about/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/./about_files/cover.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hi!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. My first name 舟 is pronounced exactly the same as Joe hence I go by it as well.&lt;/p&gt;
 &lt;p&gt;I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries. I love sports, primarily soccer, and have supported Chelsea FC since when I was 10 (London is Blue!). I studied Automotive Engineering in Turin (Italy) I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York.&lt;/p&gt;
-&lt;p&gt;I live in Lehi, UT, with my wife, and my golden retriever - Ollie.&lt;/p&gt;
+&lt;p&gt;I live in Lehi, UT, with my wife and my golden retriever - Ollie!&lt;/p&gt;
 &lt;p&gt;If my blog has helped you, you can buy me a coffee on &lt;a href=&#34;https://ko-fi.com/fjoe88&#34;&gt;Ko-fi&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
