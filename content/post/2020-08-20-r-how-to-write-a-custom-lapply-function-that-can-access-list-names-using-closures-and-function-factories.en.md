@@ -1,9 +1,9 @@
 ---
-title: '[R] How to write a [R] How to write a custom lapply function that can access
+title: '[R] How to write a custom lapply function that can access
   list names, using closures and function factories'
 author: zhoufang
 date: '2020-08-20'
-slug: r-how-to-write-a-r-how-to-write-a-custom-lapply-function-that-can-access-list-names-using-closures-and-function-factories
+slug: r-how-to-write-a-custom-lapply-function-that-can-access-list-names-using-closures-and-function-factories
 categories:
   - R
 tags:
@@ -16,7 +16,7 @@ One of my favorite as well as most used base function in R is `lapply`, where it
 
 Here is an example:
 
-```{r}
+```
 num <- list(0, 1, 2, 3)
 add_one <- function(x) x+1
 
@@ -50,7 +50,7 @@ lapply_preserve_names <- function(list, fun){
   lapply(seq_along(list), function(i){
     obj <- list[i]
     names(obj) <- names(list)[i]
-    
+
     #instead of calling lapply on each item, calling on a length of 1 list with names attribute preserved
     fun(obj)
   })
