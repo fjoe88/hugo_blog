@@ -16,7 +16,7 @@ One of my favorite as well as most used base function in R is `lapply`, where it
 
 Here is an example:
 
-```
+```{r}
 num <- list(0, 1, 2, 3)
 add_one <- function(x) x+1
 
