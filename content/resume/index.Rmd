@@ -217,11 +217,11 @@ Zhou Fang {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("Data Analysis Engineer at [Micron Technology](http://www.micron.com). I have developed more than 20 R packages, including ",
+intro_text <- glue("Data Analysis Engineer at [Micron Technology](http://www.micron.com). I have developed more than 5 R packages, including ",
   {Biocpkg("d8ahelper")}, ", ", 
   {Biocpkg("copier")}, ", ",
   {Biocpkg("rtrend")}, 
-  ", to help biologists to explore and understand their data.")
+  ", to help semiconductor professionals to explore and understand their data.")
 
 cat(sanitize_links(intro_text))
 ```
