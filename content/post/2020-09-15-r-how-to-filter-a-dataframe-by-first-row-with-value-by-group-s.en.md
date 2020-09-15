@@ -16,6 +16,13 @@ While doing data analysis using R I encountered a problem where once grouped by 
 To put it into an example:
 
 ```R
+
+df = data.frame(
+  id1 = c("a", "a", "b", "c", "b", "b", "d", "d", "b", "c"),
+  id2 = c(1,2,1,1,2,1,1,1,2,1),
+  data = c("foo", "bar", "foo", NA, "bar", "bar", NA, NA, NA, "foo")
+)
+
 #    id1 id2 data
 # 1    a   1  foo
 # 2    a   2  bar
@@ -28,11 +35,6 @@ To put it into an example:
 # 9    b   2 <NA>
 # 10   c   1  foo
 
-df = data.frame(
-  id1 = c("a", "a", "b", "c", "b", "b", "d", "d", "b", "c"),
-  id2 = c(1,2,1,1,2,1,1,1,2,1),
-  data = c("foo", "bar", "foo", NA, "bar", "bar", NA, NA, NA, "foo")
-)
 ```
 
 And what I'm shooting for is to reduce this dataframe down to:
@@ -96,9 +98,13 @@ df %>% group_by(id1, id2) %>% slice(first(which(contain_value(data))))
 
 Wallah!
 
-Notice that with R being functional programming oriented, function pipes in the form of `slice(first(which(contain_value(data))))` is quite intuitive and can be interperted as - give(slice) the first occurence of which that contains value in `data` column. :)
+Notice that with R being functional programming oriented, function pipes in the form of `slice(first(which(contain_value(data))))` is quite intuitive and can be interperted as such: 
 
-Now, another approach using data.table package.
+*give(slice) the first occurence(row) of which that contains any value in the 'data' column.* 
+
+:)
+
+Now, another approach using data.table package, also utilizing `contain_value` function.
 
 ```R
 library(data.table)
