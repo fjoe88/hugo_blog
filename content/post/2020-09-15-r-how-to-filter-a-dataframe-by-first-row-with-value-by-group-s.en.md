@@ -11,9 +11,9 @@ description: ~
 featured_image: ~
 ---
 
-While doing data analysis using R I encountered a problem where once I grouped my data by some id columns, certain group still contain multiple rows, some are duplicated and some are simply redundant rows with no data, and what I want is to reduce my data further to contain only the first row per group that is not empty within a particular data column.
+While doing data analysis using R I encountered a specific problem: my data consists of a few id columns which shall give me one row per each unique id column combinations - however I end up having multiple rows per group and some are duplications or simply rows with no data. I want to reduce this dataframe further so that it contains only **the first row per group that is not empty in a specific data column**.
 
-To put it into an example:
+Here is an example:
 
 ```R
 
@@ -37,10 +37,10 @@ df = data.frame(
 
 ```
 
-And what I'm shooting for is to reduce this dataframe down to:
+What I'm shooting for is to reduce this dataframe to:
 
 ```R
-# group d-1 d-2 contains only NAs
+# group d-1 contains only NAs
 #    id1 id2 data
 # 1    a   1  foo
 # 2    a   2  bar
@@ -49,7 +49,9 @@ And what I'm shooting for is to reduce this dataframe down to:
 # 5    c   1  foo
 ```
 
-Online searches didnt really result in great successes thus I decide to write up a custom solution, to start of I need to have a simple function that returns boolean results of if the input object is NULL, NA or simply empty strings or multiple spaces - and I need the function to be vectorized.
+My attempt for a made-ready solution online didnt end up with great successes, therefore I decide to write up a custom solution.
+
+To start off I need to have a simple function that returns boolean results of if the input object is NULL, NA or simply empty strings or multiple spaces - and I need the function to be **vectorized**.
 
 And NULL really made things more complicated.
 
@@ -75,9 +77,19 @@ contain_value <- function(x){
     !doesnt_contain_value(y)
     })
 }
+
+#[1] TRUE
+contain_value("not empty")
+
+#[1] FALSE
+contain_value(NULL)
+
+ #  <NA>  apple banana               
+ # FALSE   TRUE   TRUE  FALSE   TRUE
+contain_value(c(NA, "apple", "banana", "", "  "))
 ```
 
-Now I can tackle the problem using dplyr pipes:
+Now I can go ahead and tackle my problem using dplyr pipes:
 
 ```R
 library(magrittr)
@@ -100,11 +112,11 @@ Wallah!
 
 Notice that with R being functional programming oriented, function pipes in the form of `slice(first(which(contain_value(data))))` is quite intuitive and can be interperted as such: 
 
-*give(slice) the first occurence(row) of which that contains any value in the 'data' column.* 
+***slice** the **first** occurence(row) **which** **contains value** in the '**data**' column.* 
 
 :)
 
-Now, another approach using data.table package, also utilizing `contain_value` function.
+Now, another approach would be to use data.table package, in a similar way and also utilizing `contain_value` function.
 
 ```R
 library(data.table)
@@ -121,6 +133,6 @@ dt[, .SD[first(which(contain_value(data)))], by=c('id1', 'id2')]
 # 5:   b   2  bar
 ```
 
-I am also looking to create a solution where the data column is not restricted on a single column but multiples.
+I am also looking to create a solution where the data column is not restricted to a single column but to allow multiples.
 
 
