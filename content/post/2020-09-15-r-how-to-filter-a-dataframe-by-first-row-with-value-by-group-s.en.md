@@ -11,7 +11,7 @@ description: ~
 featured_image: ~
 ---
 
-While doing data analysis using R I encountered a problem where once grouped by some id columns, some group still contain multiple columns, and what I want is to reduce it to only the first row per group that is not empty in a specific data column.
+While doing data analysis using R I encountered a problem where once I grouped my data by some id columns, certain group still contain multiple rows, some are duplicated and some are simply redundant rows with no data, and what I want is to reduce my data further to contain only the first row per group that is not empty within a particular data column.
 
 To put it into an example:
 
@@ -120,5 +120,7 @@ dt[, .SD[first(which(contain_value(data)))], by=c('id1', 'id2')]
 # 4:   c   1  foo
 # 5:   b   2  bar
 ```
+
+I am also looking to create a solution where the data column is not restricted on a single column but multiples.
 
 
