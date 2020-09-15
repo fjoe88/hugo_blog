@@ -66,7 +66,7 @@ Copy the `config.toml` in the root directory of your website. Overwrite the exis
 
 A few suggestions to help you get a good looking site quickly:
 
-* Keep blog posts in the content/posts directory, for example: content/posts/my-first-post.md
+* Keep blog posts in the content/posts directory, for example: content/post/my-first-post.md
 * Keep static pages in the content directory, for example: content/about.md
 * Keep media like images in the static directory, for example: static/images/2019/10/screenshot.png
 
