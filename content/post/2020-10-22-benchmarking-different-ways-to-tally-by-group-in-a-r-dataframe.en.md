@@ -57,7 +57,7 @@ library(janitor)
 ids = c('id1', 'id2)
 ```
 
--   base R
+base R
 
 ``` r
 t0 <- Sys.time()
@@ -78,7 +78,7 @@ df2[1:5, ]
 # 3809 381   9    381-9 2
 ```
 
--   dplyr::add_tally
+dplyr::add_tally
 
 ``` r
 t0 <- Sys.time()
@@ -100,7 +100,7 @@ df2[1:5, ]
 # 5   381     9     2
 ```
 
--   janitor::get_dupes (underneath using `dplyr`)
+janitor::get_dupes (underneath using `dplyr`)
 
 I've often used `janitor::clean_names` for regularize dataframe column names, but lately I've found `janitor::get_dupes` which can be used to subset a dataframe down to rows where each group contain multiple observations, similar to what we are set out to do here.
 
@@ -121,7 +121,7 @@ df2[1:5, 1:5]
 # 5    1  10          2  9.554338  9.656474
 ```
 
--   data.table
+data.table
 
 High hopes here since `data.table` package is known for its speed and resource efficiency.
 
@@ -145,10 +145,10 @@ dt2[1:5, ]
 ```
 
 Final results:
-| method 	| time 	| 
-|-	|-	|
-| data.table 	| 0.03399897 secs 	|
-| dplyr  	| 0.05801296 secs 	|
-| janitor  	| 0.06700683 secs 	|
-| base R  	| 0.2090468 secs 	|
+
+**data.table - 0.03399897 secs;**
+dplyr - 0.05801296 secs;
+janitor - 0.06700683 secs;
+base R - 0.2090468 secs;
+
 Not surprisingly, data.table provides the fastest solution to the problem at hand, meanwhile it also has more readable solution to NSE(Non-Standard Eval) compared to `dplyr`, that being said for data less than 10,000 rows its fairly comparable between `data.table`/`dplyr` as well as `janitor::get_dupes` which underneath is using `dplyr` thus result in similar result. However, when scaling up, `data.table` is the preferred solution, as is usually the case.
