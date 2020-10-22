@@ -17,7 +17,7 @@ featured_image: ~
 
 Assuming one has a R dataframe that contains 1 or more observations per some group variables, and he/she is wondering how many observations (rows) exist per each group, out of curiosity or maybe because it could indicate some duplication issues or data entry issues.
 
-This is not a un-common data munging task and there are various ways to do it R, but I'll be testing out using different approaches including base R, dplyr, data.table and janitor package, and benchmark for speed.
+This is not a un-common data munging task and there are certainly various ways to do it in R, I'll be testing out using different approaches including base R(data.frame), dplyr(group_by, add_tally), data.table(.N) and janitor package(get_dupes), and benchmark each for speed.
 
 First, let's generate some random data with id columns, here I am using `rnorm` to generate a 5000 by 50 matrix of numerical data coming coming from a random normal distribution with mean of 10 and standard deviation of 1.
 
