@@ -1,5 +1,5 @@
 ---
-title: '[R]Benchmarking different ways to tally by group in a R dataframe'
+title: '[R] Benchmarking different ways to tally by group in a R dataframe'
 author: zhoufang
 date: '2020-10-22'
 slug: benchmarking-different-ways-to-tally-by-group-in-a-r-dataframe
