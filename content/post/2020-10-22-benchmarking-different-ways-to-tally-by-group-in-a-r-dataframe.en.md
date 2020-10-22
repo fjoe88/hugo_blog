@@ -145,9 +145,10 @@ dt2[1:5, ]
 ```
 
 Final results:
-| data.table| 0.03399897 secs |
-| dplyr     | 0.05801296 secs |
-| janitor   | 0.06700683 secs |
-| base R:   | 0.2090468 secs  |
+| data.table 	| 0.03399897 secs 	|
+|-	|-	|
+| dplyr: 	| 0.05801296 secs 	|
+| janitor: 	| 0.06700683 secs 	|
+| base R: 	| 0.2090468 secs 	|
 
 Not surprisingly, data.table provides the fastest solution to the problem at hand, meanwhile it also has more readable solution to NSE(Non-Standard Eval) compared to `dplyr`, that being said for data less than 10,000 rows its fairly comparable between `data.table`/`dplyr` as well as `janitor::get_dupes` which underneath is using `dplyr` thus result in similar result. However, when scaling up, `data.table` is the preferred solution, as is usually the case.
