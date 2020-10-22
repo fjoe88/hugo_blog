@@ -1,5 +1,5 @@
 ---
-title: Benchmarking different ways to tally by group in a R dataframe
+title: [R]Benchmarking different ways to tally by group in a R dataframe
 author: zhoufang
 date: '2020-10-22'
 slug: benchmarking-different-ways-to-tally-by-group-in-a-r-dataframe
@@ -169,11 +169,9 @@ dt2[1:10, ]
 ```
 
 Final result:
-1: data.table: 0.03399897 secs
-2: dplyr:      0.05801296 secs
-3: janitor:    0.06700683 secs
-4: base R:     0.2090468 secs
+1. data.table: 0.03399897 secs
+2. dplyr:      0.05801296 secs
+3. janitor:    0.06700683 secs
+4. base R:     0.2090468 secs
 
-Not surprisingly, data.table provides the fastest solution to the problem at hand, meanwhile it also has more readable solution to NSE(Non-Standard Eval) compared to dplyr, that being said for data less than 10,000 rows its fairly comparable between `data.table`/`dplyr` as well as `janitor::get_dupes` which underneath is using `dplyr` thus result in similar result.
-
-However when scaling up, data.table is preferred solution.
+Not surprisingly, data.table provides the fastest solution to the problem at hand, meanwhile it also has more readable solution to NSE(Non-Standard Eval) compared to dplyr, that being said for data less than 10,000 rows its fairly comparable between `data.table`/`dplyr` as well as `janitor::get_dupes` which underneath is using `dplyr` thus result in similar result. However when scaling up, `data.table` is the preferred solution.
