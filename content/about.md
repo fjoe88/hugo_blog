@@ -12,10 +12,8 @@ title: About
 
 **Hello!**
 
-My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. I go by Joe as well since that's how my first name 舟 is pronounced in Mandarin. 
+My name is Zhou Fang (方舟) and I am a Data Analysis Engineer at Micron where I work on improving our semiconductor wafer yield and fabrication efficiency through extracting insights from data. I go by Joe, since that's how my first name 舟 is pronounced in Mandarin.
 
-I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries. I love sports, primarily soccer, and have supported Chelsea FC since when I was 10 (London is Blue!). I studied Automotive Engineering in Turin (Italy) I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York.
-
-I currently live in Utah, with my wife, and my golden retriever - Ollie!
+I studied Automotive Engineering in Turin (Italy), I moved to the United States in 2011 and finished my MS in Mechanical Engineering at Columbia University in the city of New York. I love using the R language, enjoyed its many statistical and data munging packages, and the vibrant R community. I dab with Python too and mostly for its machine learning libraries and the language itself. I spend most of my off-work time with my family and my golden retriever Ollie, and to follow my passion in soccer and golf, I have supported Chelsea FC since when I was 10 (London is Blue!) and my favorite golfers are Tiger Woods and Collin Morikawa.
 
 If my blog has helped you, you can buy me a coffee on [Ko-fi](https://ko-fi.com/fjoe88).

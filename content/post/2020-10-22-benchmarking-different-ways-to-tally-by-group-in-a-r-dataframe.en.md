@@ -17,7 +17,7 @@ featured_image: ~
 
 Assuming one has a R dataframe that contains 1 or more observations per some group variables, and he/she is wondering how many observations (rows) exist per each group, out of curiosity or maybe because it could indicate some duplication issues or data entry issues.
 
-This is not a un-common data munging task and there are certainly various ways to do it in R, I'll be testing out using different approaches including base R(data.frame), dplyr(group_by, add_tally), data.table(.N) and janitor package(get_dupes), and benchmark each for speed.
+This is not a un-common data munging task and there are certainly various ways to do it in R, I'll be testing out using different approaches including base R(data.frame), dplyr(group*by, add*tally), data.table(.N) and janitor package(get\_dupes), and benchmark each for speed.
 
 First, let's generate some random data with id columns, here I am using `rnorm` to generate a 5000 by 50 matrix of numerical data coming coming from a random normal distribution with mean of 10 and standard deviation of 1.
 
@@ -35,7 +35,6 @@ df[1:5, 1:5]
 # 3    1   3 11.558708  8.853050 10.926961
 # 4    1   4 10.070508 11.481019  9.431848
 # 5    1   5 10.129288 10.916191 10.225090
-
 ```
 
 Now, let's randomize this dataframe row-wise, and create some duplicated rows.
@@ -78,7 +77,7 @@ df2[1:5, ]
 # 3809 381   9    381-9 2
 ```
 
-**dplyr::add_tally**
+\*\*dplyr::add\_tally\*\*
 
 ``` r
 t0 <- Sys.time()
@@ -100,7 +99,7 @@ df2[1:5, ]
 # 5   381     9     2
 ```
 
-**janitor::get_dupes** (underneath using `dplyr`)
+\*\*janitor::get\_dupes\*\* (underneath using `dplyr`)
 
 I've often used `janitor::clean_names` for regularize dataframe column names, but lately I've found `janitor::get_dupes` which can be used to subset a dataframe down to rows where each group contain multiple observations, similar to what we are set out to do here.
 
