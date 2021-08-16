@@ -11,7 +11,7 @@ description: ~
 featured_image: ~
 ---
 
-While doing data analysis using R I encountered a specific problem: my data consists of a few id columns which shall give me one row per each unique id column combinations - however I end up having multiple rows per group and some are duplications or simply rows with no data. I want to reduce this dataframe further so that it contains only **the first row per group that is not empty in a specific data column**.
+Here's a problem that I encountered while doing data analysis using R: my data consists of a few id columns, by combining these id columns I should in theory receive one unique observation (row) per each unique combination (group) - in reality I end up having multiple rows per group, some rows are duplications, and some simply are rows with no data. In order to clean this datasetm, I want to reduce this dataframe so that it contains only **the first row per group that is not empty in a specific data column**.
 
 Here is an example:
 
@@ -37,7 +37,7 @@ df = data.frame(
 
 ```
 
-What I'm shooting for is to reduce this dataframe to:
+What I would like is to reduce this dataframe to:
 
 ```R
 # group d-1 contains only NAs
@@ -49,11 +49,11 @@ What I'm shooting for is to reduce this dataframe to:
 # 5    c   1  foo
 ```
 
-My attempt for a made-ready solution online didnt end up with great successes, therefore I decide to write up a custom solution.
+My attempt for a made-ready solution online didnt end up with great successes, and I decide to take up the challange.
 
 To start off I need to have a simple function that returns boolean results of if the input object is NULL, NA or simply empty strings or multiple spaces - and I need the function to be **vectorized**.
 
-And NULL really made things more complicated.
+And NULL really made things more complicated as is almost always the case.
 
 ```R
 #contain_value(NULL) == FALSE
@@ -89,7 +89,7 @@ contain_value(NULL)
 contain_value(c(NA, "apple", "banana", "", "  "))
 ```
 
-Now I can go ahead and tackle my problem using dplyr pipes:
+Now I can go ahead and tackle my problem using `dplyr` pipes:
 
 ```R
 library(magrittr)
@@ -110,7 +110,7 @@ df %>% group_by(id1, id2) %>% slice(first(which(contain_value(data))))
 
 Wallah!
 
-Notice that with R being functional programming oriented, function pipes in the form of `slice(first(which(contain_value(data))))` is quite intuitive and can be interperted as such: 
+Interestingly with R being Functional Programming oriented, function pipes in the form of `slice(first(which(contain_value(data))))` is quite intuitive and can be interperted as such: 
 
 ***slice** the **first** occurence(row) **which** **contains value** in the '**data**' column.* 
 
