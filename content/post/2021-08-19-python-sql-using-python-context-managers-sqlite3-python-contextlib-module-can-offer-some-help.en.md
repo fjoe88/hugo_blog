@@ -9,7 +9,6 @@ categories:
   - SQL
 tags:
   - python
-  - sqlite
   - sqlite3
   - contextlib
   - context managers
@@ -37,7 +36,7 @@ finally:
 
 The main issue with the above code is that there's a real possibility that while executing the lines in between opening and closing of the file, an error could be raised, and as a result the file is not being properly closed and data could get corrupted that may leads to bigger issues. One way to tackle the problem is to write a try-except block and try catch the error while having the ability to close the file explicitly, but using context-manager will be a cleaner and more 'Pythonic' way to go at this problem - the `with` statement takes care of the closing of the file without one explicitly writing such.
 
-Python **sqlite3** module provides access to the most deployed database engine in the world - SQLite . A simple workflow example to get started with using sqlite3 can go as follows (here I am using nba_api module to pull players data and write to a local SQLite database)
+Python **sqlite3** module provides access to the most deployed database engine in the world - SQLite . A simple workflow example to get started with using `sqlite3` can go as follows (here I am using nba_api module to pull players data and write to a local SQLite database)
 
 ```Python
 import pandas as pd
@@ -63,7 +62,7 @@ conn.close()
 pd.read_sql('select * from players', conn)
 ```
 
-Now, following the same logic we can obviously try use context-manager together with sqlite3 module to create database, establish connection, execute query and close out the connection. Following the [official document](https://docs.python.org/2/library/sqlite3.html#using-the-connection-as-a-context-manager) we can use the connection as a context manager and write as follows:
+Now, following the same logic we can obviously try use context-manager together with `sqlite3` module to create database, establish connection, execute query and close out the connection. Following the [official document](https://docs.python.org/2/library/sqlite3.html#using-the-connection-as-a-context-manager) we can use the connection as a context manager and write as follows:
 
 ```Python
 with sqlite3.connect('./db/static.db') as conn:
@@ -94,7 +93,7 @@ def closing(thing):
         
 ```
 
-Now, instead of using `sqlite3.connect` we will be using `contextlib.closing` to generate our context-manager.
+Instead of using `sqlite3.connect` let's use `contextlib.closing` to generate our context-manager.
 
 ```python
 
@@ -105,9 +104,9 @@ with closing(sqlite3.connect('./db/static.db')) as conn:
 pd.read_sql('select * from players', conn)
 ```
 
-Now that outside of the `with` statement block we have our database connection being properly closed.
+Now that upon exiting the `with` statement block we have our database connection being properly closed.
 
-On a side note, I found the above way using `pandas.DataFrame.to_sql(df)` a much simpler approach, if one is to use `sqlite3` module alone, he/she should be aware that sqlite3 module implicitly opens a transaction before every SQL statements such as INSERT, UPDATE, DELETE, REPLACE, and it automatically commits before a non-query statement, e.g. CREATE TABLE. This allows the database to be isolated from any exceptions and error that could be raised during insertion of data, but one should always remember to commit changes through `db.commit()`, ommiting it would results in all the changes being rolled back at `db.close()` and have data be lost since the user did not commit the data. Example as below:
+On a side note, I found the above way of using `pandas.DataFrame.to_sql(df)` to be a much simpler approach, however, if one is to use `sqlite3` module alone, he/she should be aware that `sqlite3` module implicitly opens a transaction before every SQL statements such as INSERT, UPDATE, DELETE, REPLACE, and it automatically commits before a non-query statement, e.g. CREATE TABLE. This allows the database to be isolated from any exceptions and error that could be raised during insertion of data, but one should always remember to commit changes through `db.commit()`, ommiting it would results in all the changes being rolled back at `db.close()` and have data be lost since the user did not commit the data. Example as below:
 
 ```python
 db = sqlite3.connect('static.db')
