@@ -93,7 +93,7 @@ def closing(thing):
         
 ```
 
-Instead of using `sqlite3.connect` let's use `contextlib.closing` to generate our context-manager.
+Instead of using `sqlite3.connect` now let's use `contextlib.closing` to generate our context-manager.
 
 ```python
 
@@ -106,7 +106,7 @@ pd.read_sql('select * from players', conn)
 
 Now that upon exiting the `with` statement block we have our database connection being properly closed.
 
-On a side note, I found the above way of using `pandas.DataFrame.to_sql(df)` to be a much simpler approach, however, if one is to use `sqlite3` module alone, he/she should be aware that `sqlite3` module implicitly opens a transaction before every SQL statements such as INSERT, UPDATE, DELETE, REPLACE, and it automatically commits before a non-query statement, e.g. CREATE TABLE. This allows the database to be isolated from any exceptions and error that could be raised during insertion of data, but one should always remember to commit changes through `db.commit()`, ommiting it would results in all the changes being rolled back at `db.close()` and have data be lost since the user did not commit the data. Example as below:
+On a side note, I found the above way of using `pandas.DataFrame.to_sql(df)` to be a much simpler approach, however, if one is to use `sqlite3` module alone, he/she should be aware that `sqlite3` module implicitly opens a transaction before every SQL statements such as INSERT, UPDATE, DELETE, REPLACE, and it automatically commits before a non-query statement, e.g. CREATE TABLE. This allows the database to be isolated from any exceptions and error that could be raised during insertion of data, but one should always remember to commit changes through `db.commit()`, ommiting it would results in all the changes being rolled back at `db.close()` and have data be lost since the user did not commit the changes.
 
 ```python
 db = sqlite3.connect('static.db')
