@@ -29,7 +29,11 @@ In this book the author coined the term of 'Geocomputation' as follows:
 
 GeoComputation is about using the various different types of geodata and about developing relevant geo-tools within the overall context of a ‘scientific’ approach.” 
 
-The author listed 2 fundamental geopgraphic data models: vector and raster.
+Before I proceed with an example of spatial data interpolation using R and `raster`, the concepts of **Geographic data models** and **Spatial autocorrelation** should be introduced.
+
+- **Geopgraphic data models**
+
+The author listed 2 fundamental geographic data models: vector and raster.
 
 - The *vector data model* represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision(but not necessarily accuracy.)
 
@@ -38,3 +42,12 @@ The author listed 2 fundamental geopgraphic data models: vector and raster.
 Think of the difference between vector data model and raster data model as vectorized images versus a real photo images, where the former is precise in the sense that you will still receive a smooth image as resolution increases, but it is no where as accurate as the latter which represents a real image but is limited by the resolution given.
 ![tigers](/post/2021-08-20-r-hands-on-spatial-data-interpolation-with-r-raster-package.en_files/tigers_fixed_resolution.png)
 
+- **Spatial autocorrelation**
+
+Autocorrelation is a measure of similarity, or correlation, between nearby observations, temporal and spatial autocorrelation are two of the common examples of autocorelation.
+
+Temporal autocorrelation
+If you measure something about he same object over time, such as a person's weight or wealth, it is likely that two observations that are close to each other in time are also close in measurements, in other words the data measured close-by in time tend to correlate with each other. Temporal autocorrelation is also the basis to many of the Time Series analysis.
+
+Spatial autocorrelation
+The concept of spatial autocorrelation is an extension of temporal autocorrelation, time is one-dimensional and only goes in one direction (ever forward). spatial objects have (at least) two dimensions and complex shapes, and it may not be obvious how to determine what is "near". Measures of spatial autocorrelation describe the degree to which observations at spatial locations (whether they are points, areas, or raster cells), are similar to each other. So two things are needed: observation and location.
