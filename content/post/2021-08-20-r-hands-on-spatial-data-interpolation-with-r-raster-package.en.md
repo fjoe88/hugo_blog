@@ -1,8 +1,8 @@
 ---
-title: '[R] Hands-on spatial data interpolation 1/2 - Background. '
+title: '[R] Hands-on spatial data interpolation 1/2 - Background '
 author: zhoufang
 date: '2021-08-20'
-slug: r-hands-on-spatial-data-interpolation-1/2-background
+slug: r-hands-on-spatial-data-interpolation-1-2-background
 categories:
   - R
 tags:
