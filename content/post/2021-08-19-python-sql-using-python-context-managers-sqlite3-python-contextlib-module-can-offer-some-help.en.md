@@ -1,5 +1,5 @@
 ---
-title: '[Python|SQL] Using Python context managers + sqlite3? Python contextlib module
+title: '[Python|sqlite3] Using Python context managers + sqlite3? Python contextlib module
   can offer some help.'
 author: zhoufang
 date: '2021-08-19'

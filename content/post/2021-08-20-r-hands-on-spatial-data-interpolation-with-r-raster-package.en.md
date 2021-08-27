@@ -1,8 +1,8 @@
 ---
-title: '[R] Hands-on spatial data interpolation with R raster package. '
+title: '[R] Hands-on spatial data interpolation 1/2 - Background. '
 author: zhoufang
 date: '2021-08-20'
-slug: r-hands-on-spatial-data-interpolation-with-r-raster-package
+slug: r-hands-on-spatial-data-interpolation-1/2-background
 categories:
   - R
 tags:
@@ -10,12 +10,13 @@ tags:
   - spatial data
   - interpolation
   - raster
+  - gstat
   - spatial autocorrelation
 description: ~
 featured_image: ~
 ---
 
-When doing data analysis using spatial data, it is important that the spatial data is collected at a good-enough resolution to avoid excessive missing data which will severly impact the quality of this data to be used as a feature. In reality, one can easily have limited the data due to only limited samples being available, as a result spatial data interpolation becomes necessary and key to fill the missing values.
+When doing data analysis using spatial data, it is important that the spatial data is collected at a good-enough resolution to avoid excessive missing data which will severely impact the quality of this data to be used as a feature. In reality, one can easily have limited the data due to only limited samples being available, as a result spatial data interpolation becomes necessary and key to fill the missing values.
 
 In the semiconductor manufacturing, key parameters such as film thickness after deposition or etch process are monitored across wafers that are 300mm in diameter, this data is measured in-line (during production) through advanced optical x-ray based metrology equipment via a single probe measuring one site at a time, the total site numbers measured per wafer is limited primarily by the measurement speed that is in turn affecting the cycle time of the materials and the ability for a facility to output products and make money, therefore the number of sites per wafer measured in-line is typically limited to under 20 sites which is too sparse for any precise readings when the number of dies can easily reach hundreds if not thousands per single silicon wafer (one healthy die yields one chip when dice are sliced at the end of production). 
 
