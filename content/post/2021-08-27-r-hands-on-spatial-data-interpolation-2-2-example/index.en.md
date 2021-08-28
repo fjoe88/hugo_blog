@@ -82,7 +82,7 @@ plot(ip)
 contour(ip, nlevels=10, add=T)
 ```
 
-![](images/27-19-32-38.png.png)
+![](images/27-19-32-38.png)
 
 ```R
 library(dismo)
