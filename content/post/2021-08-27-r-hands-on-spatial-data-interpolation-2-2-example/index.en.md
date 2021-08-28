@@ -44,7 +44,6 @@ ggplot(df, aes(x = x, y = y, z = z, fill = z)) +
 
 ![](images/2021-08-27 13_54_12-RStudio.png)
 
-
 ```R
 #interpolate missing values
 test <- df[is.na(df$z), ]
@@ -67,3 +66,53 @@ ggplot(df, aes(x, y, z = z2, fill = z2)) +
 ```
 
 ![](images/2021-08-27 13_54_02-RStudio.png)
+
+```R
+library(raster)
+dxy <- df[complete.cases(df), ]
+
+ras <- raster(x=matrix(runif(400), nrow=20, ncol=20), xmx=20, xmn=-20, ymx=20, ymn=-20)
+plot(ras)
+
+#knn k-nearest-neighbor, set 'nmax'=5, set=list(idp=0)
+id <- gstat(formula=z~1, locations=~x+y, data=dxy)
+ip <- raster::interpolate(ras, id)
+
+plot(ip)
+contour(ip, nlevels=10, add=T)
+```
+
+![](images/27-19-32-38.png.png)
+
+```R
+library(dismo)
+
+#k-fold cross validation
+
+#alternative to using dismo: kf <- sample(seq_len(5), nrow(dxy), replace=T, prob=rep(1/5, 5))
+kf <- dismo::kfold(nrow(dxy), k=5)
+
+rmse <- rep(NA, 5)
+
+for (k in 1:5) {
+  test <- dxy[kf == k, ]
+  train <- dxy[kf != k, ]
+  
+  gscv <- gstat(formula = z~1, locations = ~x+y, data=train)
+  p <- predict(gscv, test)$var1.pred
+  
+  RMSE <- function(m, o) {
+    sqrt(mean(m-o)^2)
+  }
+  
+  rmse[k] <- RMSE(test$z, p)
+}
+
+#[1] 0.150700931 0.004024369 0.223633899 0.234800772
+#[5] 0.429306499
+rmse
+
+#[1] 0.6924585
+mean(rmse/sd(dxy$z))
+
+```
