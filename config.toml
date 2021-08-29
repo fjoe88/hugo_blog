@@ -8,7 +8,7 @@ paginate = 12
 enableEmoji = true
 enableRobotsTXT = true
 googleAnalytics = ""
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "fjoe88"
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
@@ -27,7 +27,7 @@ PygmentsStyle = "monokai"
 
 [menu]
   [[menu.main]]
-    name = "Blog"
+    name = "Post"
     url = "/post/"
     weight = 1
 
@@ -166,7 +166,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
 [params.gitalk]
 owner = "fjoe88"       # Your GitHub ID
-repo = "hugo_blog"        # The repo to store comments
+repo = "hugo_blog_comments"        # The repo to store comments
 clientId = ""    # Your client ID
 clientSecret = "" # Your client secret
 
@@ -182,11 +182,11 @@ clientSecret = "" # Your client secret
   visitor = true
 
 [params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+    owner = "fjoe88"              # Your GitHub ID
+    repo = "hugo_blog_comments"               # The repo to store comments
 
 [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+    owner = "fjoe88"              # Your GitHub ID
+    repo = "hugo_blog_comments"               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
