@@ -78,7 +78,7 @@ create_wafer <- function(d=300, die_x=1, die_y=1, origin_x=0, origin_y=0) {
 
 ```
 
-Simply call create_wafer passing in die size and origin or accept the defaults and try plot the wafer map using `ggplot2`'s geom_tile or geom_raster functions that are suited for plotting wafer maps.
+Simply call `create_wafer` now and passing in die size and origin arguments or accept the defaults, try plot the wafer map using `ggplot2`'s `geom_tile` or `geom_raster` functions that are suited for plotting wafer maps.
 
 ```R
 wf <- create_wafer(die_x = 10, die_y = 20, origin_x=0, origin_y = 0)
