@@ -12,7 +12,7 @@ description: ~
 featured_image: ~
 ---
 
-Objective: to write a `create_wafer` function that returns a data frame that represent a wafer mapping of dice, each row contains the center and 4 corner locations of a die, along with region location and if it is a partial die(part of the die falls outside of the wafer boundary).
+Objective: to write a `create_wafer` function that returns a data frame which represents a wafer mapping information of dice, with each row insists of the center and 4 corner locations of a die in (x,y) coordinates, along with region location, and if it is a partial die (part of the die falls outside of the wafer boundary and to be scrapped at the end of line of manufacturing process).
 
 Note that two additional columns of 'circle_x' and 'circle_y' are added to the return data frame only for the visual assist of adding a wafer parameter drawing on top of the wafer map.
 
