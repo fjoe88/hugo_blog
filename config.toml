@@ -27,7 +27,7 @@ PygmentsStyle = "monokai"
 
 [menu]
   [[menu.main]]
-    name = "Post"
+    name = "Posts"
     url = "/post/"
     weight = 1
 
