@@ -14,7 +14,7 @@ description: ~
 featured_image: ~
 ---
 
-<img src="images/IMB_Ewp5Oq2.gif" alt="" width="400px"/>
+<img src="images/IMB_rh6ert.gif" alt="" width="400px"/>
 
 
 Ok, here is how my swing looks like (on a good day) at the beginning of 2021.
