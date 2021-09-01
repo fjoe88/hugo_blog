@@ -1,5 +1,5 @@
 ---
-title: '[Personal] What I've learned about golf in the past 9 months from zero experience'
+title: '[Personal] Transition of my golf swing in the past 9 months time.'
 author: zhoufang
 date: '2021-09-01'
 slug: []
