@@ -12,7 +12,9 @@ description: ~
 featured_image: ~
 ---
 
-Objective: to write a `create_wafer` function that returns a data frame which represents a wafer mapping information of dice, with each row insists of the center and 4 corner locations of a die in (x,y) coordinates, along with region location, and if it is a partial die (part of the die falls outside of the wafer boundary and to be scrapped at the end of line of manufacturing process).
+Objective: Be able to setup a data frame that allows convinient data analysis and data visualization of a semiconductor wafer made up of dice, given its dimension, die size, and origin location.
+
+How: Write a `create_wafer` function that returns a data frame with each row insists of the center and corner locations of a die in (x,y) coordinates, along with region location information, and whether it is a partial die (part of the die falls outside of the wafer boundary and to be scrapped at the end of line of manufacturing process).
 
 Note that two additional columns of 'circle_x' and 'circle_y' are added to the return data frame only for the visual assist of adding a wafer parameter drawing on top of the wafer map.
 
@@ -78,7 +80,7 @@ create_wafer <- function(d=300, die_x=1, die_y=1, origin_x=0, origin_y=0) {
 
 ```
 
-Simply call `create_wafer` now and passing in die size and origin arguments or accept the defaults, try plot the wafer map using `ggplot2`'s `geom_tile` or `geom_raster` functions that are suited for plotting wafer maps.
+Now simply call `create_wafer` now and passing in die size and origin arguments or accept the defaults, try plot the wafer map using `ggplot2`'s `geom_tile` or `geom_raster` functions that are suited for plotting wafer maps.
 
 ```R
 wf <- create_wafer(die_x = 10, die_y = 20, origin_x=0, origin_y = 0)
