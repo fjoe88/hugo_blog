@@ -1,5 +1,5 @@
 ---
-title: '[Personal] Transition of my golf swing in the past 9 months time.'
+title: '[Personal] What I've learned in the past 9 months about golf from zero experience.'
 author: zhoufang
 date: '2021-09-01'
 slug: []
@@ -14,6 +14,9 @@ description: ~
 featured_image: ~
 ---
 
+Golf is one of the sport that I picked up during the pandemic (like many others as I start to find out), and now deeply addicted to and can only see myself playing as long as I am physically capable.
+
+Here is one of my iron swing at a local driving range taken last weekend.
 <img src="images/IMB_rh6ert.gif" alt="" width="400px"/>
 
 
@@ -21,7 +24,7 @@ Ok, here is how my swing looks like (on a good day) at the beginning of 2021.
 
 <img src="images/IMB_isXZvM.gif" alt="" width="400px"/>
 
-Summing up what I've learned in the past 9 months time from never stepping foot on a golf course or a practice range.
+As the journey continues for me to find more consistency and power, here I'll try to sum up what I've learned in the past 9 months time from never stepping foot on a golf course or a practice range.
 
 - The sport of golf is not for the faint of heart, that being said - it is truly addictive and fascinating especially for anyone who enjoys *self-improvement through learning, thinking and practicing*.
 
