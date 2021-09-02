@@ -13,13 +13,13 @@ description: ~
 featured_image: ~
 ---
 
-Golf is one of the sport that I picked up during the pandemic (like many others as I start to find out), and now deeply addicted to and can only see myself playing as long as I am physically capable.
+Golf is one of the sport that I picked up only during the pandemic (many others did similar as I found out later), and now I'm deeply addicted to and can only see myself playing as long as I am physically capable.
 
-Here is one of my iron swing at a local driving range taken last weekend, it's of course far from perfect but I would say it came long way from what I was doing merely 9 months ago.
+Here is one of my swings with an 8 iron from last weekend, there are many aspects that need to be worked on of course but I would say it came long way from what I was doing merely 9 months ago.
 <img src="images/IMB_rh6ert.gif" alt="" width="400px"/>
 
 
-OK, here is how my swing looks like (on a good day) at the beginning of 2021.
+And here is what my swing looks like (on a good day) at the beginning of 2021.
 
 <img src="images/IMB_isXZvM.gif" alt="" width="400px"/>
 
@@ -39,6 +39,6 @@ As the journey continues for me to find more consistency and power, here I'll tr
 
 - Keep aware of the *take away* and keep it wide (on a wide arc along the swing plane, not inside of), doing so will ensure a connected back swing between the club, arm and the body. I can't stress how important this seemingly small thing will help smooth out the whole swing and add power. Collin always like to mention the glove drill that he found extremely helpful even at his level - where you tuck a glove or towel under your lead armpit and ensure it does not fall off throughout your backswing, the purpose of this drill is to ensure that your entire body are involved in the wind up process (backswing) and not just your arms like what I was doing a few months ago.
 
-- *Weight shift*, like *clearing of the hip*, is always mentioned as a key aspect, however it is not something I tend to think about a lot at practice, and it is one of the swing thought that is difficult to grasp and do correct especially when deliberately trying to work on. At the beginning I always tend to shift my weight way too much onto my lead foot(left) which led to an unnatural swing. One key drill that I found helpful is taught by Danny Maude (YouTube) which is a relaxed, athletic swings and not thinking about where the ball would end up - swing the club in pendulum motion back and forth and take advantage of the moment of inertia to begin the back swing, through this practice my body is naturally adapted to how the sequence should be and a natural shift of weight to my trailing foot (idealy only slightly for stability and consistency reasons) instead of my lead foot will happen.
+- *Weight shift*, like *clearing of the hip*, is always mentioned as a key aspect, however it is not something I tend to think about a lot at practice, and it is one of the swing thought that is difficult to grasp and do correct especially when deliberately being worked on. At the beginning I always tend to shift my weight way too much onto my lead foot(left) which led to an unnatural swing. One key drill that I found helpful is taught by Danny Maude (YouTube) which is a relaxed, athletic swings and not thinking about where the ball would end up - swing the club in pendulum motion back and forth and take advantage of the moment of inertia to begin the back swing, through this practice my body is naturally adapted to how the sequence should be and a natural shift of weight to my trailing foot (idealy only slightly for stability and consistency reasons) instead of my lead foot will happen.
 
 Being introspective about your golf is key to continuous improvement and joy, not doing so will only cause frustration and literal pain through your wrist and arms! To all my birdie bodies and my eagle enthusiasts, the journey continues!
