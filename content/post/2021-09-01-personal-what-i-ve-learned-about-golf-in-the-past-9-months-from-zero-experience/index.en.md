@@ -1,14 +1,13 @@
 ---
-title: '[Personal] What I've learned in the past 9 months about golf from zero experience.'
+title: '[Personal] What I''ve learned about golf in the past 9 months from zero experience.'
 author: zhoufang
 date: '2021-09-01'
 slug: []
 categories:
   - Personal
-  - Golf
+  - golf
 tags:
   - golf
-  - golf swing
   - personal
 description: ~
 featured_image: ~
