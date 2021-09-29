@@ -135,6 +135,26 @@ For example if your master node token is 'RPIFUN' with an IP address of '192.168
 
 `curl -sfL https://get.k3s.io | K3S_TOKEN="RPIFUN" K3S_URL="https://192.168.1.123:6443" K3S_NODE_NAME="rpi-worker1" sh -`
 
+> kubectl: the CLI administration tool for Kubernetes
+
 Once K3S is installed on our master node as well as all of the worker nodes, we can check the status of our kubernetes cluster by typing `kubectl get nodes`, better, we can add `-w` at the end so that we can watch the status of our nodes and eventually we should have all of our nodes appearing and READY.
 
 <img src="images/2021-09-29 15_39_47-Command Prompt.png" alt="" width="500px"/>
+
+### Deploy Kubernetes-Dashboard
+
+`kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml`
+
+Running the Kubectl command creates both the Kubernetes dashboard service and deployment. It also creates a default service account, role, role binding and secret for the dashboard: 
+
+Once we create the dashboard we can access it using Kubectl. To do this we will spin up a proxy server between our local machine and the Kubernetes apiserver.
+
+`Kubectl proxy`
+
+Kubectl proxy is the recommended way of accessing the Kubernetes REST API. It uses http for the connection between localhost and the proxy server and https for the connection between the proxy and apiserver.
+
+We can access the Kubernetes dashboard UI by browsing to the following url, from our master node Raspbian OS Desktop browser: 
+
+`http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`
+
+<img src="images/2021-09-29 16_06_31-Clipboard.png" alt="" width="600px"/>
