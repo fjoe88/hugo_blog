@@ -77,12 +77,12 @@ To enable SSH connection we need to add a file named ssh in the boot partition.
 
 Open your terminal and cd into /Volumes/boot:
 
-```
+```bash
 cd Volumes/boot
 ```
 
 Then create the ssh file:
-```
+```bash
 touch ssh
 ```
 
@@ -102,17 +102,19 @@ To configure Wi-Fi, we need to create a *file wpa_supplicant.conf* file under th
 
 Open your terminal and cd into /Volumes/boot:
 
-`cd Volumes/boot`
+```bash
+cd Volumes/boot
+```
 
 Create the ssh file:
 
-```
+```bash
 $ sudo nano file wpa_supplicant.conf
 ```
 
 Then paste into the .conf file below content, substituting the part of `<WIFI NAME>` and `<WIFI password>` for your own.
 
-```
+```bash
 update_config=1
  ctrl_interface=/var/run/wpa_supplicant
  network={
@@ -136,7 +138,7 @@ To check if our Raspberry Pi boots correctly, go to command prompt(Windows) or t
 
 Once SSH connection successfully to the Raspbery Pi, type
 
-```
+```bash
 $ sudo vi /boot/cmdline.txt
 ```
 
@@ -150,25 +152,25 @@ Finally, reboot the system using `sudo reboot` and we will be ready to install K
 
 On our master node, install `K3S` as such
 
-```
+```bash
 $ curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s
 ```
 
 Once installed we need to get our node-token from the master in order proceed with K3S installation on our worker nodes.
 
-```
+```bash
 $ cat /var/lib/rancher/k3s/server/node-token
 ```
 
 With the token copied, install K3S on worker nodes using
 
-```
+```bash
 $ curl -sfL https://get.k3s.io | K3S_TOKEN="<master_node_token>" K3S_URL="https://<master_node_ip_address>:6443" K3S_NODE_NAME="<worker_name>" sh -
 ```
 
 For example if your master node token is 'RPIFUN' with an IP address of '192.168.1.123' and you intend to name it 'rpi-worker1' then the command to install K3S on our 1st worker node will be:
 
-```
+```bash
 $ curl -sfL https://get.k3s.io | K3S_TOKEN="RPIFUN" K3S_URL="https://192.168.1.123:6443" K3S_NODE_NAME="rpi-worker1" sh -
 ```
 
@@ -180,7 +182,7 @@ Once K3S is installed on our master node as well as all of the worker nodes, we 
 
 ### Deploy Kubernetes-Dashboard
 
-```
+```bash
 $ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
@@ -188,7 +190,7 @@ Running the Kubectl command creates both the Kubernetes dashboard service and de
 
 Once we create the dashboard we can access it using Kubectl. To do this we will spin up a proxy server between our local machine and the Kubernetes apiserver.
 
-```
+```bash
 $ Kubectl proxy
 ```
 
