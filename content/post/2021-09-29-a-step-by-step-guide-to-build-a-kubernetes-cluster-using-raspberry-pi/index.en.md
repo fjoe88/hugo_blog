@@ -20,10 +20,17 @@ featured_image: ~
 
 Follow this step-by-step guide if you have a few Raspberry Pis available and want to build a on-premises Kubernetes cluster and then deploy some containerized applications such as WordPress and MySQL on the cluster.
 
+> Why build a self-hosted Kubernetes Cluster?
+> - We want to and it is fun!
+> - Running a Kubernetes cluster providers like DigitalOcean can still set you back 50+ USD per month for a modest cluster. 
+> - It helps anyone to get familiar with how Kubernetes works and gives useful practices on what a typical DevOps engineer is doing on daily basis.
+> - It takes up minimal space and is energy efficient, sure running a Kubernetes cluster on Pis will be less powerful as compared to running on used servers, workstations or NUCS but they are also more power hungry.
+> - Raspberry Pis are pretty powerful especially the RPi4.
+
 A few things are needed:
 
 - At least 2 Raspberry Pis of model 3b, 3b+ or (preferably) 4.
-- MircroSD card of at least 8GB for each Pi
+- MircroSD card of at least 32GB for each Pi
 - A Wi-Fi connection or a Ethernet cable for each Pi
 
 I have a few Raspberry Pis at hand and for this project I will be using my Raspberry Pi 4 Model B with 4GB RAM as the master node, and a RPi 3 Model B+ plus a RPi 3 Model B as its 2 worker nodes, it is recommended to use your most capable Pi as your master node since it will require more resources.
@@ -37,6 +44,17 @@ I am however going to instal a Raspbian OS w/ GUI onto the RPi4 (master) with th
 It is also possible to opt for Ubuntu instead of the Raspbian OS which I will not get into here as the Raspbian OS will be sufficient for all intends and purposes of this post.
 
 ### Install Raspbian OS (Lite)
+
+> Raspbian OS or Ubuntu? 32-bit or 64-bit OS?
+> - 32-bit OS has a 3GB process limit, one is unlikely to exceed such limit but depending on your use cases it is something to be aware of.
+> - As of the timing of this post there is no official version of the 64-Bit Raspbian OS out yet, there is a beta version but it is with Desktop and not the lite version.
+> - I've tried both of the Raspbian Lite 32-bit version as well as the 64-bit beta version w/ Desktop and both runs just fine, however it is recommended to run the 32-bit Lite version as it is faster and spare more system resources without having to run a Desktop OS.
+> - From my experience, Ubuntu works well as RaspiOS Lite on the Raspberry Pi4.
+
+ 
+The Raspberry Pi Foundation do have a beta version of RaspiOS out, however it isn't the lite edition and comes with a fully-loaded desktop.
+
+In my experience with K3s, Ubuntu 20.10 works equally well as RaspiOS Lite on the RPi4. I tend to recommend with RaspiOS with its 32-bit OS because most Raspberry Pi users already use this and are comfortable with it.
 
 - Go to [Operating system images](https://www.raspberrypi.org/software/operating-systems/) and download the latest versions of Raspberry Pi OS with desktop and Raspberry Pi OS Lite, and download any image flash software or follow this example and simply use the Raspberry Pi Imager available [here](https://www.raspberrypi.org/software/).
 
@@ -59,10 +77,14 @@ To enable SSH connection we need to add a file named ssh in the boot partition.
 
 Open your terminal and cd into /Volumes/boot:
 
-`cd Volumes/boot`
+```
+cd Volumes/boot
+```
 
 Then create the ssh file:
-`touch ssh`
+```
+touch ssh
+```
 
 *(Windows)*
 
@@ -83,17 +105,22 @@ Open your terminal and cd into /Volumes/boot:
 `cd Volumes/boot`
 
 Create the ssh file:
-`sudo nano file wpa_supplicant.conf`
+
+```
+$ sudo nano file wpa_supplicant.conf
+```
 
 Then paste into the .conf file below content, substituting the part of `<WIFI NAME>` and `<WIFI password>` for your own.
 
-`update_config=1
+```
+update_config=1
  ctrl_interface=/var/run/wpa_supplicant
  network={
  scan_ssid=1
  ssid="<WIFI NAME>"
  psk="<WIFI password>"
- }`
+ }
+ ```
 
 Ctrl-X to save and Y to confirm, now wifi is set up.
 
@@ -109,7 +136,9 @@ To check if our Raspberry Pi boots correctly, go to command prompt(Windows) or t
 
 Once SSH connection successfully to the Raspbery Pi, type
 
-`sudo vi /boot/cmdline.txt`
+```
+$ sudo vi /boot/cmdline.txt
+```
 
 and add 'cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1' at the end of the line.
 
@@ -121,19 +150,27 @@ Finally, reboot the system using `sudo reboot` and we will be ready to install K
 
 On our master node, install `K3S` as such
 
-`curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s`
+```
+$ curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s
+```
 
 Once installed we need to get our node-token from the master in order proceed with K3S installation on our worker nodes.
 
-`cat /var/lib/rancher/k3s/server/node-token`
+```
+$ cat /var/lib/rancher/k3s/server/node-token
+```
 
 With the token copied, install K3S on worker nodes using
 
-`curl -sfL https://get.k3s.io | K3S_TOKEN="<master_node_token>" K3S_URL="https://<master_node_ip_address>:6443" K3S_NODE_NAME="<worker_name>" sh -`
+```
+$ curl -sfL https://get.k3s.io | K3S_TOKEN="<master_node_token>" K3S_URL="https://<master_node_ip_address>:6443" K3S_NODE_NAME="<worker_name>" sh -
+```
 
 For example if your master node token is 'RPIFUN' with an IP address of '192.168.1.123' and you intend to name it 'rpi-worker1' then the command to install K3S on our 1st worker node will be:
 
-`curl -sfL https://get.k3s.io | K3S_TOKEN="RPIFUN" K3S_URL="https://192.168.1.123:6443" K3S_NODE_NAME="rpi-worker1" sh -`
+```
+$ curl -sfL https://get.k3s.io | K3S_TOKEN="RPIFUN" K3S_URL="https://192.168.1.123:6443" K3S_NODE_NAME="rpi-worker1" sh -
+```
 
 > kubectl: the CLI administration tool for Kubernetes
 
@@ -143,13 +180,17 @@ Once K3S is installed on our master node as well as all of the worker nodes, we 
 
 ### Deploy Kubernetes-Dashboard
 
-`kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml`
+```
+$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+```
 
 Running the Kubectl command creates both the Kubernetes dashboard service and deployment. It also creates a default service account, role, role binding and secret for the dashboard: 
 
 Once we create the dashboard we can access it using Kubectl. To do this we will spin up a proxy server between our local machine and the Kubernetes apiserver.
 
-`Kubectl proxy`
+```
+$ Kubectl proxy
+```
 
 Kubectl proxy is the recommended way of accessing the Kubernetes REST API. It uses http for the connection between localhost and the proxy server and https for the connection between the proxy and apiserver.
 
